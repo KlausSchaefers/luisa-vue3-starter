@@ -6,11 +6,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "download": "node node_modules/luisa-util/lib/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "luisa-vue3": "^3.0.2",
+    "luisa-vue": "^3.0.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
   },
@@ -25,6 +26,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "luisa-util": "^1.0.3",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
