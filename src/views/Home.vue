@@ -9,6 +9,12 @@
  */
 import app from './app.json'
 
+/**
+ * Import mdi fonts if you are using quant-ux designs
+ */
+//import '@mdi/font/css/materialdesignicons.css'
+
+
 export default {
   name: 'Home',
   data: function() {
