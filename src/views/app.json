@@ -211,7 +211,7 @@
       "id": "w10004",
       "parentId": "w10003",
       "name": "Your name",
-      "type": "Label",
+      "type": "TextBox",
       "figmaId": "0:13",
       "figmaType": "TEXT",
       "x": 256,
@@ -251,6 +251,10 @@
           "down": false,
           "fixedHorizontal": false,
           "fixedVertical": false
+        },
+        "placeholder": true,
+        "databinding": {
+          "default": "name"
         }
       },
       "has": {
@@ -361,7 +365,7 @@
           "hugHorizontal": true
         },
         "callbacks": {
-          "click": "sendContact"
+          "click": "sayHello"
         }
       },
       "has": {
@@ -476,7 +480,7 @@
           "fixedVertical": false
         },
         "databinding": {
-          "default": "contact.status"
+          "default": "result"
         }
       },
       "has": {

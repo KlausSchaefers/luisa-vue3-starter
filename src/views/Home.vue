@@ -21,13 +21,18 @@ export default {
       design: app,
       viewModel: {
         name:'',
+        result: ''
       },
       config: {
       }
     }
   },
   components: {
-    
+  },
+  methods: {
+    sayHello () {
+      this.viewModel.result = "Hello " + this.viewModel.name
+    }
   }
 }
 </script>
