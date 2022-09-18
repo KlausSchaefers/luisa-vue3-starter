@@ -8,11 +8,12 @@ module.exports = {
     'eslint:recommended'
   ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@babel/eslint-parser'
   },
   rules: {
-    'no-console': 'off',
-    'no-debugger': 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/multi-word-component-names': 'off',
     'no-async-promise-executor': 'off'
   },
   overrides: [
